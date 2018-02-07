@@ -13,6 +13,7 @@ import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroFightComponent } from './hero-fight/hero-fight.component';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeroFightComponent } from './hero-fight/hero-fight.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroFightComponent
+    HeroFightComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
