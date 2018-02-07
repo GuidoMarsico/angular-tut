@@ -1,0 +1,25 @@
+<h2>Hero Fight</h2>
+<div >
+  
+  <select aria-placeholder="Hero 1" [(ngModel)]="hero1">
+    <option *ngFor="let hero of heroes" value={{hero.name}}  >
+      {{hero.name}}
+    </option>
+  </select>
+
+  <select aria-placeholder="Hero 2" [(ngModel)]="hero2">
+    <option *ngFor="let hero of heroes" value={{hero.name}}>
+      {{hero.name}}
+    </option>
+  </select>
+
+  <div >
+      <button (click)="fight()"> Fight </button>
+
+  </div>
+
+  <div *ngIf="winner">
+    <span> Winner: {{winner.name}} </span>
+  </div>
+
+</div>
